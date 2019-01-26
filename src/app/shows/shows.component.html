@@ -1,0 +1,4 @@
+<p *ngIf="loading">Loading Shows</p>
+<div *ngIf="!loading && calendarOptions" class="calender-container">
+  <ng-fullcalendar #ucCalendar [options]="calendarOptions" [(eventsModel)]="shows"></ng-fullcalendar>
+</div>
